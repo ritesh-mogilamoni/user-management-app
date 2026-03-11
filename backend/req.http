@@ -1,0 +1,17 @@
+###Create user
+POST http://localhost:7000/user-api/create-user
+Content-Type: application/json
+
+{
+    "name":"alex",
+    "email":"knlnj@alks.xom",
+    "dateOfBirth":"2000-11-10",
+    "mobileNo":"888845880"
+}
+
+###Read all users
+GET http://localhost:7000/user-api/users
+
+
+###Read user by ID
+GET http://localhost:7000/user-api/users/69a6989fe58f1b13081bfe4e
