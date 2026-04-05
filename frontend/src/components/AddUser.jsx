@@ -70,7 +70,7 @@ function AddUser() {
           className="mb-5 border w-full text-2xl"
           placeholder="Mobile number"
         />
-        <button type="submit" className="text-2xl bg-lime-400 text-lime-50 px-8 py-4">
+        <button type="submit" className="text-2xl bg-gray-500 rounded text-gray-50 p-3">
           Add User
         </button>
       </form>
