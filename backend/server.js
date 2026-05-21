@@ -9,8 +9,13 @@ config();
 const app = exp();
 
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: [
+        "http://localhost:5173",
+        "https://user-mngmnt-app.vercel.app"
+    ],
+    credentials: true
 }));
+
 app.use(exp.json());
 
 async function connectToDB() {
