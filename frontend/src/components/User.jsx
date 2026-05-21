@@ -11,9 +11,9 @@ function User() {
       <p className="text-2xl">{state?.user?.dateOfBirth}</p>
       <p className="text-2xl">{state?.user?.mobileNumber}</p>
 
-      <button className="bg-red-600 text-white p-2.5 rounded-4xl">
+      {/* <button className="bg-red-600 text-white p-2.5 rounded-4xl">
         Delete User
-      </button>
+      </button> */}
     </div>
   );
 }

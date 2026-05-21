@@ -20,7 +20,7 @@ function AddUser() {
     setLoading(true);
     // make HTTP POST req to create new user
     try {
-      let res = await fetch("http://localhost:7000/user-api/create-user", {
+      let res = await fetch("https://user-mngmnt-app-backend.onrender.com/user-api/create-user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
