@@ -24,4 +24,17 @@ userApp.get('/users/:id',async(req,res)=>{
     res.status(200).json({message:"Users",payload:user})
 })
 //Delete a user by ID
+userApp.delete('/del-user/:id',async(req,res)=>{
+    let uid=req.params.id
+    let user= await UserModel.findByIdAndDelete(uid)
+    res.status(200).json({message:"Deleted user",payload:user})
+})
+
 //Update user by ID
+userApp.put('/user-update',async(req,res)=>{
+    let uid=req.body.id
+    
+    let new_user=await UserModel.findByIdAndUpdate( uid,{$set:{name:req.body.name, email:req.body.email, mobileNo:req.body.mobileNo}}, {new:true} )
+    
+    res.status(200).json({message:"Updated User",payload:new_user})
+})

@@ -15,3 +15,17 @@ GET http://localhost:7000/user-api/users
 
 ###Read user by ID
 GET http://localhost:7000/user-api/users/69a6989fe58f1b13081bfe4e
+
+###Delete user by ID
+DELETE http://localhost:7000/user-api/del-user/69d29bbbfdef59e61684739f
+
+###Update user by ID
+PUT http://localhost:7000/user-api/user-update/
+Content-Type: application/json
+
+{
+    "id":"69a6989fe58f1b13081bfe4e",
+    "name":"alexnew",
+    "email":"alex@mail.com",
+    "mobileNo":"9999999999"
+}
