@@ -17,7 +17,7 @@ async function connectToDB() {
     try {
         await connect(process.env.DB_URL);
 
-        app.listen(process.env.PORT, () => {
+        app.listen(process.env.PORT || 5000, () => {
             console.log("Server Listening on PORT :", process.env.PORT);
         });
 
