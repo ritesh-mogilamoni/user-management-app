@@ -124,6 +124,55 @@ https://user-mngmnt-app.vercel.app/
 https://user-mngmnt-app-backend.onrender.com
 
 ---
+# 📦 Packages Installed
+
+## Backend Packages
+
+| Package                    | Purpose                                          |
+| -------------------------- | ------------------------------------------------ |
+| `express`                  | Backend web framework for creating APIs          |
+| `mongoose`                 | MongoDB object modeling and database connection  |
+| `dotenv`                   | Loads environment variables from `.env` file     |
+| `cors`                     | Enables Cross-Origin Resource Sharing            |
+| `nodemon` *(if installed)* | Automatically restarts server during development |
+
+### Backend Install Commands
+
+```bash
+npm install express mongoose dotenv cors
+```
+
+```bash
+npm install --save-dev nodemon
+```
+
+---
+
+# 🎨 Frontend Packages
+
+| Package                         | Purpose                          |
+| ------------------------------- | -------------------------------- |
+| `react`                         | Frontend library for building UI |
+| `react-dom`                     | React rendering for web          |
+| `react-router`                  | Client-side routing              |
+| `react-hook-form`               | Form handling and validation     |
+| `vite`                          | Fast frontend build tool         |
+| `tailwindcss` *(if configured)* | Utility-first CSS framework      |
+
+### Frontend Install Commands
+
+```bash
+npm install react react-dom react-router react-hook-form
+```
+
+```bash
+npm install -D vite
+```
+
+```bash
+npm install -D tailwindcss
+```
+
 
 # ⚙️ Installation and Setup
 
